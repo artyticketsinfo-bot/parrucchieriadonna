@@ -1,4 +1,3 @@
-
 import { SalonSettings } from './types';
 
 export const INITIAL_SERVICES = [
@@ -47,12 +46,5 @@ export const DEFAULT_SETTINGS: SalonSettings = {
   reviews: [
     { id: 'r1', author: 'Marta R.', text: 'Elena è bravissima col colore, consigliatissimo!', rating: 5 },
     { id: 'r2', author: 'Sofia V.', text: 'Ambiente rilassante e molta professionalità.', rating: 5 }
-  ],
-  // Fix: Added default vonage configuration to match updated SalonSettings interface
-  vonage: {
-    apiKey: '',
-    apiSecret: '',
-    senderId: 'Salon',
-    smsTemplate: 'Ciao [NOME], confermiamo il tuo appuntamento per [SERVIZIO] il [DATA] alle [ORA]. Gestisci qui: [LINK]'
-  }
+  ]
 };

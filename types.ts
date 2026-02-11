@@ -1,4 +1,3 @@
-
 export interface Service {
   id: string;
   name: string;
@@ -59,13 +58,6 @@ export interface SalonSettings {
     password?: string;
   };
   reviews: Review[];
-  // Fix: Added vonage property to SalonSettings to satisfy services/smsService.ts requirements
-  vonage: {
-    apiKey: string;
-    apiSecret: string;
-    senderId: string;
-    smsTemplate: string;
-  };
 }
 
 export enum ViewMode {
